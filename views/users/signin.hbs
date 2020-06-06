@@ -1,0 +1,32 @@
+<div class="ui container">
+    <br><br>
+    <h2 class="ui header blue">Players Information</h2>
+    <br><br>
+    {{!-- <% if(messages.error){ %>
+    <div class="ui inverted segment red">
+        <%= messages.error %>
+    </div>
+    <% } %> --}}
+
+
+    {{#if messages.error}}
+    <div class="ui segment inverted red">
+        {{messages.error}}
+    </div>
+    {{/if}}
+    <form action="/users/signin" class="ui green form" method="POST">
+        <div class="two fields">
+            <div class="field">
+                <label for="email">Enter Player Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter Player email">
+            </div>
+            <div class="field">
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Player password">
+            </div>
+        </div>
+        <div class="ui field fluid">
+            <input type="submit" value="Submit" class="ui button green fluid">
+        </div>
+    </form>
+</div>

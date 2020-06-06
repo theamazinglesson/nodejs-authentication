@@ -1,0 +1,12 @@
+<div class="ui container">
+    <br><br>
+    <h2 class="header">Profile informations</h2>
+    <br><br>
+    <div class="ui segment blue">
+        Welcome {{name}}
+        Welcome Unknown players
+    </div>
+    <form action="/users/signout?_method=DELETE" class="ui form container stackable" method="POST">
+        <button type="submit" class="ui button red">Sign Out</button>
+    </form>
+</div>

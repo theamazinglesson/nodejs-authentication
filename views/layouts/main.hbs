@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/semantic.min.css">
+  <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="ui green inverted menu menu">
+      <div class="ui container">
+        <div class="header item">
+          <a href="/">Our Company</a>
+        </div>
+        <a class="item before-signin" href="/users/signin">
+          Sign In
+        </a>
+        <a class="item before-signin" href="/users/signup">
+          Sign Up
+        </a>
+        <a class="item after-signin"  href="/users/profile">
+          Profile
+        </a>
+      </div>
+    </div>
+    {{{body}}}
+  </div>
+  <script src="/js/main.js"> </script>
+</body>
+
+</html>

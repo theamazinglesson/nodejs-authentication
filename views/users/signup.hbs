@@ -1,0 +1,35 @@
+<div class="ui container">
+    <br><br>
+    <h2 class="ui header blue">Players Information</h2>
+    <br><br>
+    {{#if err}}
+    <div class="ui segment inverted red">
+        {{err}}
+    </div>
+    {{/if}}
+    <form action="/users/signup" class="ui green form" method="POST">
+        <div class="two fields">
+            <div class="field">
+                <label for="name">Enter Player Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Player Name" value={{name}}>
+            </div>
+            <div class="field">
+                <label for="email">Enter Player Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Player email" value={{email}}>
+            </div>
+        </div>
+        <div class="two fields">
+            <div class="field">
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Player password">
+            </div>
+            <div class="field">
+                <label for="password2">Confirm Password</label>
+                <input type="password" name="password2" id="password2" placeholder="Enter Player password">
+            </div>
+        </div>
+        <div class="ui field fluid">
+            <input type="submit" value="Submit" class="ui button green fluid">
+        </div>
+    </form>
+</div>
